@@ -1,1 +1,6 @@
-<div>Hello World!</div>
+<div>
+  <% @topics.each do |topic| %>
+    <%= render topic %><br>
+  <% end %>
+
+</div>

@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get '/topicos', to: 'topics#index'
+  get '/topics', to: 'topics#index'
+  get '/', to: 'home#index'
 end
