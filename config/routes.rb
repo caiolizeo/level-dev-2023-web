@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :posts
   get "/topics", to: "topics#index"
   post "/topics", to: "topics#create"
