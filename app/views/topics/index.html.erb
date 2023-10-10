@@ -1,6 +1,16 @@
+<% if notice.present? %>
+ <p style="color: green"><%= notice %></p>
+<% end %>
+
 <div>
   <% @topics.each do |topic| %>
     <%= render topic %><br>
+    <%= link_to "Editar", edit_topic_path(topic) %>
+    <br>
+    <br>
   <% end %>
+</div>
 
+<div>
+    <%= link_to "Criar tópico", new_topic_path %>
 </div>

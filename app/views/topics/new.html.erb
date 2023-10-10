@@ -1,0 +1,10 @@
+<%= form_with(model: @topic, url: topics_path, method: :post) do |form| %>
+  <div>
+    <%= form.label :titulo, style: "display: block" %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
